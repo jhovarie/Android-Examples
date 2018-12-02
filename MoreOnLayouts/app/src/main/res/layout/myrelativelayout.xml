@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        this will set margin left and right from parent
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        -->
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World"
+        android:layout_alignBaseline="@+id/button1"
+        />
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_toRightOf="@+id/textview1"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <!-- Pachamba lang ito -->
+
+    <TextView
+        android:id="@+id/barik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barik"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="140dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - ONE - "
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/barik"
+        android:layout_alignBaseline="@+id/barik"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - TWO - "
+        android:layout_alignLeft="@+id/barik"
+        android:layout_marginTop="140dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - Three - "
+        android:layout_alignRight="@+id/barik"
+        android:layout_marginTop="270dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - Four - "
+        android:layout_marginLeft="70dp"
+        android:layout_alignTop="@+id/barik"
+        />
+
+</RelativeLayout>
